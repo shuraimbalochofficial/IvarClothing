@@ -21,7 +21,7 @@
         <div class="nav-actions">
           <!-- cart -->
           <button class="cart-btn" onclick="toggleCart()">
-            <span class="cart-icon">🛒</span>
+            <span class="cart-icon">Cart 🛒</span>
             <span class="cart-count">0</span>
           </button>
         </div>
@@ -53,7 +53,26 @@
       </div>
 
       <div class="filters">
-        <button></button>
+        <button class="filter-btn active" onclick="filterProducts('all')">
+          All Items
+        </button>
+        <!--  -->
+        <button class="filter-btn" onclick="filterProducts('men')">
+          Men
+        </button>
+        <!--  -->
+        <button class="filter-btn" onclick="filterProducts('women')">
+          Women
+        </button>
+        <!--  -->
+        <button class="filter-btn" onclick="filterProducts('accessories')">
+          Accessories
+        </button>
+        <!--  -->
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Product items will be added here -->
       </div>
     </section>
   </body>
