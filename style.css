@@ -28,3 +28,83 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: blue;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-btn {
+  cursor: pointer;
+  position: relative;
+  border: 2px solid #e9ece9;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  gap: 0.5rem;
+}
+
+.cart-btn:hover {
+  background-color: #f0f0f0;
+  border-color: rgba(255, 166, 0, 0.89);
+  transform: translateY(-1px);
+}
+
+.cart-count {
+  background-color: rgba(255, 166, 0, 0.89);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.hero {
+}
