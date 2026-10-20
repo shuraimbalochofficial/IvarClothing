@@ -107,4 +107,34 @@ body {
 }
 
 .hero {
+  height: 100vh;
+  /* background: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("assets/bg.jpg") no-repeat center center/cover;
+  opacity: 0.5;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #000;
+  max-width: 700px;
+  padding: 0 2rem;
+}
+
+.hero h1{
+    font-size: rem;
 }
